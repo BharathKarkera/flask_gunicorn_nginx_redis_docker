@@ -30,6 +30,12 @@ Use 'docker scan' to run Snyk tests against images to find vulnerabilities and l
  ⠿ Container flask_redis_nginx_gunicorn-web_server-2  Started                                                                                                          1.5s
  ⠿ Container nginx_lb                                 Started                                                                                                          2.3s
  6:03PM @Bharath ~ 
+ 
+ 
+ 
+ 
+ 
+ 
  6:03PM @Bharath ~ 
  6:03PM @Bharath ~ sudo docker ps -a                             
 CONTAINER ID   IMAGE                                   COMMAND                  CREATED          STATUS         PORTS                                         NAMES
@@ -39,6 +45,14 @@ CONTAINER ID   IMAGE                                   COMMAND                  
 9ffde4b848f8   flask_redis_nginx_gunicorn_web_server   "/bin/sh -c 'gunicor…"   10 seconds ago   Up 8 seconds   0.0.0.0:49210->5000/tcp, :::49210->5000/tcp   flask_redis_nginx_gunicorn-web_server-3
 f798d0b1dc4d   redis:latest                            "docker-entrypoint.s…"   11 seconds ago   Up 9 seconds   0.0.0.0:6379->6379/tcp, :::6379->6379/tcp     redis_server
  6:04PM @Bharath ~ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  6:06PM @Bharath ~ 
  6:06PM @Bharath ~ curl -i  http://localhost:80
 HTTP/1.1 200 OK
@@ -48,4 +62,4 @@ Content-Type: text/html; charset=utf-8
 Content-Length: 118
 Connection: keep-alive
 
-This is a simple load balanced application, served by instance: 0a3a937fc0d1 and this is your 8th visit to the website%                                                      6:06PM @Bharath ~ 
+This is a simple load balanced application, served by instance: 0a3a937fc0d1 and this is your 8th visit to the website
